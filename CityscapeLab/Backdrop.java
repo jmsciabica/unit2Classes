@@ -15,9 +15,18 @@ import java.awt.Color;
  */
 public class Backdrop
 {
-    private int xLeft;
-    private int yTop;
-
+   /** specifies the left side of the backdrop*/
+   private int xLeft;
+   /** specifies the top of the backdrop*/
+   private int yTop;
+    
+    /**
+     * This is the building constructor
+     *
+     * @param    x  Specifies the left side of the backdrop
+     * 
+     * @param    x  Specifies the top of the backdrop
+   */
     public Backdrop(int x, int y)
     {
         xLeft = x;

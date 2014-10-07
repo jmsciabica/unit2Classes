@@ -8,9 +8,18 @@ import java.awt.Color;
 
 public class Building
 {
-    private int xLeft;
-    private int yTop;
+   /** specifies the left side of the builing*/
+   private int xLeft;
+   /** specifies the top of the building*/
+   private int yTop;
     
+    /**
+     * This is the building constructor
+     *
+     * @param    x  Specifies the left side of the building
+     * 
+     * @param    x  Specifies the top of the building
+   */
     public Building(int x, int y)
     {
         xLeft = x;
@@ -18,9 +27,9 @@ public class Building
     }
     
     /**
-     * An example of a method - Creates city building instances
+     * Creates city building instances
      *
-     * @param    Graphics2D g2 ... Graphics used to draw the houses/buildings
+     * @param    g2 ... Graphics used to draw the houses/buildings
      * 
      * @return    void
      */

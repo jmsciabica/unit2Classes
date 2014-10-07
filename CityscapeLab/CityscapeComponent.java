@@ -15,7 +15,7 @@ public class CityscapeComponent extends JComponent
      *
      * @param   Graphics g draws the background,grass,moon, and house instances
      * 
-     * @return    void
+     
      */
     public void paintComponent(Graphics g)
     {

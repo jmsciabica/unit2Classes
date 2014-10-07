@@ -8,9 +8,18 @@ import java.awt.Color;
 
 public class Moon
 {
-    private int xLeft;
-    private int yTop;
+    /** specifies the left side of the moon*/
+   private int xLeft;
+   /** specifies the top of the moon*/
+   private int yTop;
 
+   /**
+     * This is the building constructor
+     *
+     * @param    x  Specifies the left side of the moon
+     * 
+     * @param    x  Specifies the top of the moon
+   */
     public Moon(int x, int y)
     {
         xLeft = x;
