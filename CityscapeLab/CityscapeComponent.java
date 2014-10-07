@@ -1,35 +1,40 @@
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import javax.swing.JComponent;
-
 /**
  * Class that creates instances of the classes that comprise the cityscape and delegates drawing the
  *  cityscape to these object.
  * 
- * @author @gcschmit
- * @version 18 July 2014
+ * @author @Jessie Sciabica
+ * @version 7 October 2014
  */
 public class CityscapeComponent extends JComponent
 {
     /**
-     * An example of a method - replace this comment with your own
-     *    that describes the operation of the method
+     * An example of a method - creates the background,grass,moon, and house instances
      *
-     * @pre        preconditions for the method
-     *            (what the method assumes about the method's parameters and class's state)
-     * @post    postconditions for the method
-     *            (what the method guarantees upon completion)
-     * @param    y    description of parameter y
-     * @return    description of the return value
+     * @param   Graphics g draws the background,grass,moon, and house instances
+     * 
+     * @return    void
      */
     public void paintComponent(Graphics g)
     {
         Graphics2D g2 = (Graphics2D) g;
         
-        // create instances of classes and invoke the draw method on each
-        // ...
+        Backdrop background = new Backdrop(0,0);
+        
+        Backdrop grass = new Backdrop(0,0);
+       
+        Moon moon= new Moon(0,0);
+        
+        Building house = new Building(0,0);
+        
+        background.draw(g2);
+        grass.draw(g2);
+        moon.draw(g2);
+        house.draw(g2);
+        
         
         
     }
-
 }
