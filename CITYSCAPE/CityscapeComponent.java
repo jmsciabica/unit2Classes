@@ -27,13 +27,15 @@ public class CityscapeComponent extends JComponent
        
         Moon moon= new Moon(25,25,100);
         
+        
+        
         Building house = new Building(100,100,150,500);
         
-        Building2 house2 = new Building2(250,50,200,550);
+        Building house2 = new Building(250,50,200,550);
         
-        Building3 house3 = new Building3(400,120,200,480);
+        Building house3 = new Building(400,120,200,480);
         
-        Building4 house4 = new Building4(520,60,200,540);
+        Building house4 = new Building(520,60,200,540);
         
         sky.draw(g2);
         grass.draw(g2);
@@ -43,5 +45,6 @@ public class CityscapeComponent extends JComponent
         house4.draw(g2);
         house3.draw(g2);
         
+       
     }
 }

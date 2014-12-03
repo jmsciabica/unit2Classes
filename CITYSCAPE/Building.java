@@ -5,6 +5,7 @@ import java.awt.geom.Rectangle2D;
 import java.awt.geom.Line2D;
 import java.awt.geom.Point2D;
 import java.awt.Color;
+import java.util.Random;
 
 public class Building
 {
@@ -32,6 +33,14 @@ public class Building
         Hh = h;
     }
     
+   Random rand = new Random();
+   
+   int r= rand.nextInt(255) ;
+   int g= rand.nextInt(255) ;
+   int b= rand.nextInt(255) ;
+   
+   Color col = new Color(r, g, b);
+    
     /**
      * Creates city building instances
      *
@@ -43,10 +52,9 @@ public class Building
     {
         Rectangle2D.Double house = new Rectangle2D.Double(Xx,Yy,Ww,Hh);
         
-        Color house1c = new Color(150,149,150);
-        
-        g2.setColor(house1c);
+        g2.setColor(col);
         g2.fill(house);
+        
     }
 }
         
